@@ -26,7 +26,7 @@
       --color-white: #ffffff;
 
      /* Font */
-      --title-font: Horroh, Arial, sans-serif;
+      --title-font: Horroh, 'Righteous', Arial, sans-serif;
       --main-font: 'Righteous', Arial, sans-serif;
 
 
@@ -251,7 +251,8 @@
     @media (max-width: 620px)
     {
       .banner{
-      flex-direction: column
+      flex-direction: column;
+      font-size: clamp(80px, 8vw, 320px);
       }
       .logo svg{
         width: 70vw;
