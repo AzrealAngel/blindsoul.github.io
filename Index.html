@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blind Soul</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<script src="script.js"></script>
+
+<body>
+    <div class="banner" id="Home">
+      <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="clamp(48px, 8vw, 320px)" height="auto" viewBox="0 0 210 297">
+  <path
+    fill="var(--color-text)"
+    d="M 32.729584,30.132634 C 7.230033,92.159211 11.024665,156.51021 11.024665,221.98413 l 82.328991,-23.20183 5.488602,40.91503 -27.86674,56.44216 127.823312,-71.95461 c -19.22522,-8.54062 -27.16046,-10.94999 -30.46488,-40.66376 l 27.30724,-5.44579 c 3.56787,-26.77313 4.0357,-55.05763 1.50296,-82.579026 C 196.07523,83.881 194.47182,72.40161 192.34143,61.22914 191.31747,55.859198 190.17178,50.56017 188.90517,45.351023 171.90096,11.217081 150.92369,3.7722284 115.30805,1.4422314 82.380057,1.7820866 57.259181,9.2103277 32.729584,30.132634 Z"/>
+  
+  <path
+    fill="var(--color-primary)"
+    d="m 36.132628,175.26322 c -5.741853,-8.13264 -1.588446,-14.05475 -2.94019,-17.49338 -1.351744,-3.43863 -5.598677,-5.35454 -4.973706,-8.34767 0.624971,-2.99313 1.392255,-3.42501 1.392255,-3.42501 0,0 -5.128357,-4.20572 -3.676019,-7.07199 1.452337,-2.86626 2.74262,-9.10482 1.041484,-10.41964 -1.701136,-1.31481 -10.510762,-4.78466 -9.445189,-9.4201 1.065572,-4.63545 4.96741,-5.88597 7.936667,-11.42781 2.969256,-5.54184 8.849465,-16.26519 7.613302,-22.394525 C 31.845069,79.13376 32.018289,76.186588 32.131599,70.639549 32.244908,65.09251 33.843348,60.727948 36.471812,54.831333 39.100276,48.934718 48.696418,36.120202 48.696418,36.120202 L 59.673619,34.62331 c 0,0 2.503863,9.75289 11.476158,21.704918 8.972295,11.952028 46.781503,45.297152 46.781503,45.297152 l -6.27145,35.75167 c -11.24658,39.23768 -69.785348,46.01881 -75.527202,37.88617 z"/>
+  
+  <path
+    fill="var(--color-accent)"
+    d="m 24.761552,108.559 c 0,0 -1.652016,-0.0682 172.405528,-13.333612 -0.709,-11.615316 -2.53735,-23.049703 -4.75773,-34.132195 C 32.822168,77.969882 32.075796,78.308268 32.075796,78.308268 c 0,0 0.103338,1.463366 0.353213,4.009647 0.280049,2.853759 0.678988,6.953704 0.03209,9.619535 -1.224105,5.044434 -7.699543,16.62155 -7.699543,16.62155 z"/>
+</svg>
+
+
+     </div>
+     <div>&nbsp;</div>
+      Blind Soul
+    </div>
+
+    <div class="topbar">
+      <button class="topbar-btn" onclick="document.getElementById('Home').scrollIntoView({ behavior: 'smooth', block: 'center' });">
+        Home</button>
+      <button class="topbar-btn" onclick="document.getElementById('Gallery').scrollIntoView({ behavior: 'smooth', block: 'center' });">
+        Gallery</button>
+      <button class="topbar-btn" onclick="document.getElementById('Contact').scrollIntoView({ behavior: 'smooth', block: 'center' });">
+        Contact</button>
+    </div>
+
+    
+
+    <div class="container" id="Contact">
+      <p>Simon.L.Brinch@gmail.com</p>
+    </div>
+
+    <div class="filter-bar" id="Gallery">
+      <button class="filter-btn" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="character">
+        <span class="btn-text">Character</span>
+        <span class="btn-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="8" r="4"/> <!-- head -->
+          <path d="M4 20c0-4 16-4 16 0v-4H4v4z"/> <!-- body -->
+        </svg>
+        </span>
+      </button>
+      <button class="filter-btn" data-filter="environment">
+        <span class="btn-text">Environment</span>
+        <span class="btn-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 22h20L12 2z"/> <!-- mountain-like triangle -->
+          </svg>
+        </span>
+      </button>
+      <button class="filter-btn" data-filter="photo">
+        <span class="btn-text">Photography</span>
+        <span class="btn-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="3"/> <!-- lens -->
+            <path d="M4 7h4l2-3h4l2 3h4v12H4V7z"/> <!-- camera body -->
+          </svg>
+        </span>
+      </button>
+      <button class="filter-btn" data-filter="wip">WIP</button>
+    </div>
+
+  
+    <div class="masonry">
+      <img src="https://picsum.photos/300/250?1" alt="" class="character" loading="lazy">
+      <img src="https://picsum.photos/300/350?2" alt="" class="environment" loading="lazy">
+      <img src="https://picsum.photos/300/300?3" alt="" class="photo" loading="lazy">
+      <img src="https://picsum.photos/300/400?4" alt="" class="wip" loading="lazy">
+      <img src="https://picsum.photos/300/200?5" alt="" class="character" loading="lazy">
+      <!-- add more images -->
+    </div>
+
+
+    <div class="spacer"></div>
+
+
+</body>
+</html>
