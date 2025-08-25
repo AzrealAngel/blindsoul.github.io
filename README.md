@@ -1,1 +1,1 @@
-# blindsoul.github.io
+# Portfolio website for my art Blind Soul
