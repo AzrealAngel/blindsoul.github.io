@@ -58,7 +58,7 @@ window.addEventListener("load", () => {
         setTimeout(() => {
         ignoreScroll = false; // re-enable after scroll settles
         resetIdleTimer();
-        }, 1000); // adjust if your smooth scroll lasts longer
+        }, 5000); // adjust if your smooth scroll lasts longer
     });
     });  
 
