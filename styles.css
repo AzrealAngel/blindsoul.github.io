@@ -99,7 +99,7 @@
       font-family: var(--main-font);       /* keep your font */
       font-size: clamp(6px, 20px, 20px);   /* or your preferred size */
       left: 50%;            /* middle of viewport */
-      border-radius: 0 0 5px 5px;      /* rounds the corners */
+      border-radius: 0 0 50px 50px;      /* rounds the corners */
       margin: 0 auto 0;
 
       display: flex;
@@ -138,7 +138,7 @@
       color: var(--color-primary);
       width: clamp(80vw, 80vw, 100vw);     /* Maximum width for big screens */
       margin: 0 auto;       /* Centers horizontally */
-      border-radius: 5px;
+      border-radius: 30px;
       font-size: 2rem;
       height: 10vh;
 
@@ -202,7 +202,7 @@
       height: clamp(40px, 4vh, 80px);
       padding: 1vh 1vh;
       background: var(--color-secondary);               
-      border-radius: 5px;      /* rounds the corners */
+      border-radius: 30px;      /* rounds the corners */
       margin: 1.5vh auto 0;
       display: flex;
       align-items: center;      /* vertical alignment */
@@ -253,7 +253,7 @@
     {
       .banner{
       flex-direction: column;
-      font-size: clamp(80px, 8vw, 320px);
+      font-size: clamp(70px, 10vw, 320px);
       }
       .logo svg{
         width: 50vw;
@@ -267,9 +267,9 @@
 
     @media (max-width: 620px)
     {
-      .banner{
+      .banner{a
       flex-direction: column;
-      font-size: clamp(80px, 8vw, 320px);
+      font-size: clamp(70px, 10vw, 320px);
       }
       .logo svg{
         width: 70vw;
