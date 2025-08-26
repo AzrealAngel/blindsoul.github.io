@@ -8,12 +8,12 @@
       --color-white: #ffffff;
 
       /* Font */
-      --title-font: Horroh, 'Righteous', Arial, sans-serif;
+      --title-font: 'Righteous', Arial, sans-serif;
       --main-font: 'Righteous', Arial, sans-serif;
 
       /*  */
 
-    }
+    } 
     
     @media (prefers-color-scheme: dark) {
       :root {
@@ -107,7 +107,6 @@
       align-items: center;      /* vertical alignment */
 
       box-shadow: 0px 10px 0px var(--color-accent);
-
     }
 
     .topbar-btn {
@@ -148,7 +147,7 @@
     }
 
     .spacer {
-      height: 100vh; /* Extra space so we can scroll */
+      height: 20vh; /* Extra space so we can scroll */
     }
 
     .logo svg{
@@ -246,7 +245,6 @@
     .filter-btn .btn-text {
       display: inline; /* show text by default */
     }
-
   
 
     @media (max-width: 900px)
