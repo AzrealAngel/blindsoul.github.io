@@ -99,12 +99,14 @@
       font-family: var(--main-font);       /* keep your font */
       font-size: clamp(6px, 20px, 20px);   /* or your preferred size */
       left: 50%;            /* middle of viewport */
-      border-radius: 0 0 50px 50px;      /* rounds the corners */
+      border-radius: 0 0 5px 5px;      /* rounds the corners */
       margin: 0 auto 0;
 
       display: flex;
       justify-content: space-around;  /* buttons centered */
       align-items: center;      /* vertical alignment */
+
+      box-shadow: 0px 10px 0px var(--color-accent);
 
     }
 
@@ -136,7 +138,7 @@
       color: var(--color-primary);
       width: clamp(80vw, 80vw, 100vw);     /* Maximum width for big screens */
       margin: 0 auto;       /* Centers horizontally */
-      border-radius: 30px;
+      border-radius: 5px;
       font-size: 2rem;
       height: 10vh;
 
@@ -186,6 +188,7 @@
     @media (max-width: 600px) {
       .masonry {
         column-count: 1;
+        margin: 3vh 3vw;
       }
     }
 
@@ -199,10 +202,12 @@
       height: clamp(40px, 4vh, 80px);
       padding: 1vh 1vh;
       background: var(--color-secondary);               
-      border-radius: 30px;      /* rounds the corners */
+      border-radius: 5px;      /* rounds the corners */
       margin: 1.5vh auto 0;
       display: flex;
       align-items: center;      /* vertical alignment */
+
+      box-shadow: 0px 10px 0px var(--color-accent);
     }
 
     .filter-btn {
@@ -244,8 +249,20 @@
 
   
 
-
-
+    @media (max-width: 900px)
+    {
+      .banner{
+      flex-direction: column;
+      font-size: clamp(80px, 8vw, 320px);
+      }
+      .logo svg{
+        width: 50vw;
+      }
+      .container{
+        font-size: 1.5rem;
+        width: 95vw;
+      }
+    }
 
 
     @media (max-width: 620px)
@@ -267,4 +284,13 @@
       .filter-btn .btn-icon {
         display: inline; /* show icon on small screens */
       }
+      .topbar {
+        width: 100vw;
+        border-radius: 0;
+      }
+      .filter-bar {
+        width: 100vw;
+        border-radius: 0;
+      }
+
     }
