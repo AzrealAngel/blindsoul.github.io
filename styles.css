@@ -8,7 +8,7 @@
       --color-white: #ffffff;
 
       /* Font */
-      --title-font: Horroh, Arial, sans-serif;
+      --title-font: Horroh, 'Righteous', Arial, sans-serif;
       --main-font: 'Righteous', Arial, sans-serif;
 
       /*  */
@@ -26,7 +26,7 @@
       --color-white: #ffffff;
 
      /* Font */
-      --title-font: Horroh, 'Righteous', Arial, sans-serif;
+      --title-font: 'Righteous', Arial, sans-serif;
       --main-font: 'Righteous', Arial, sans-serif;
 
 
@@ -66,7 +66,7 @@
       justify-content: center;                /* Horizontally center text */
       font-size: clamp(48px, 8vw, 320px);
       font-family: var(--title-font);
-     
+      
     }
     
 
@@ -267,7 +267,7 @@
 
     @media (max-width: 620px)
     {
-      .banner{a
+      .banner{
       flex-direction: column;
       font-size: clamp(70px, 10vw, 320px);
       }
