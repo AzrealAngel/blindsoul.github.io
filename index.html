@@ -43,12 +43,16 @@
       Blind Soul
     </div>
 
-    <div class="topbar">
+    <button id="menu-btn" class="menu-btn">☰</button>
+
+    <div class="topbar" id="topbar">
       <button class="topbar-btn" onclick="document.getElementById('Home').scrollIntoView({ behavior: 'smooth', block: 'center' });">
         Home</button>
         <button class="topbar-btn" onclick="document.getElementById('Showcase').scrollIntoView({ behavior: 'smooth', block: 'center' });">
         Showcase</button>
-      <button class="topbar-btn" onclick="document.getElementById('Gallery').scrollIntoView({ behavior: 'smooth', block: 'center' });">
+        <button class="topbar-btn" onclick="window.location.href='indexprojects.html'">
+        Projects</button>
+      <button class="topbar-btn"  onclick="document.getElementById('Gallery').scrollIntoView({ behavior: 'smooth', block: 'center' });">
         Gallery</button>
       <button class="topbar-btn" onclick="document.getElementById('Contact').scrollIntoView({ behavior: 'smooth', block: 'center' });">
         Contact</button>
@@ -62,6 +66,21 @@
 
     <div class="spacer"></div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     <div class="filter-bar" id="Gallery">
       <button class="filter-btn" data-filter="all">All</button>
       <button class="filter-btn" data-filter="character">

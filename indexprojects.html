@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blind Soul Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+  
+    </style>
+</head>
+<body>
+<div class="scroll-wrapper">  
+ <div class="row">
+  
+    <div class="cardcatagory"><div class="blankstart"></div><div class="top-text">Realistic</div><div class="side-text">Character</div></div>
+    <div class="card">
+      <div class="top-text">2025</div> <!-- Date -->
+      <div class="side-text">Some name</div>  <!-- Name -->
+      <div class="center-image"><img src="images/AlbumReplacement.png" alt="Artwork"></div>  <!-- Image -->
+    </div>
+    <div class="card">
+      <div class="top-text">2025</div> <!-- Date -->
+      <div class="side-text">Some name</div>  <!-- Name -->
+      <div class="center-image"><img src="images/AlbumReplacement.png" alt="Artwork"></div>  <!-- Image -->
+    </div>
+    <div class="card">
+      <div class="top-text">2025</div> <!-- Date -->
+      <div class="side-text">Some name</div>  <!-- Name -->
+      <div class="center-image"><img src="images/AlbumReplacement.png" alt="Artwork"></div>  <!-- Image -->
+    </div>
+    <div class="card">
+      <div class="top-text">2025</div> <!-- Date -->
+      <div class="side-text">Some name</div>  <!-- Name -->
+      <div class="center-image"><img src="images/AlbumReplacement.png" alt="Artwork"></div>  <!-- Image -->
+    </div>
+    <div class="cardcatagory"><div class="top-text">Stylized</div><div class="side-text">Character</div></div>
+    <div class="card">
+      <div class="top-text">2025</div> <!-- Date -->
+      <div class="side-text">Some name</div>  <!-- Name -->
+      <div class="center-image"><img src="images/AlbumReplacement.png" alt="Artwork"></div>  <!-- Image -->
+    </div>
+    <div class="card">
+      <div class="top-text">2025</div> <!-- Date -->
+      <div class="side-text">Some name</div>  <!-- Name -->
+      <div class="center-image"><img src="images/AlbumReplacement.png" alt="Artwork"></div>  <!-- Image -->
+    </div>
+    <div class="card">
+      <div class="top-text">2025</div> <!-- Date -->
+      <div class="side-text">Some name</div>  <!-- Name -->
+      <div class="center-image"><img src="images/AlbumReplacement.png" alt="Artwork"></div>  <!-- Image -->
+    </div>
+    <div class="cardcatagory"><div class="top-text"></div><div class="side-text">Environment</div></div>
+    <div class="card">
+      <div class="top-text">2025</div> <!-- Date -->
+      <div class="side-text">Some name</div>  <!-- Name -->
+      <div class="center-image"><img src="images/AlbumReplacement.png" alt="Artwork"></div>  <!-- Image -->
+    </div>
+    <div class="cardcatagory"><div class="top-text"></div><div class="side-text"></div></div>
+    <div class="blankend"></div>
+    </div>
+</div>
+  <div class="recordcontainer"></div>
+  
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const container = document.querySelector('.scroll-wrapper');
+
+    window.addEventListener('wheel', (e) => {
+      e.preventDefault(); // prevent vertical scroll
+      container.scrollLeft += e.deltaY * 4; // scroll horizontally
+    }, { passive: false });
+  });
+</script>
+</body>
+</html>
