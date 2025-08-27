@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
         !topbar.contains(e.target) &&
         e.target !== menuBtn) {
       topbar.classList.remove('active');
+      menuBtn.classList.remove('active');
     }
   });
 });
