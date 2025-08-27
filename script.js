@@ -1,66 +1,4 @@
-window.addEventListener("load", () => {
-  const topbar = document.querySelector(".topbar");
-  let lastScrollY = window.scrollY;
-  let idleTimeout;
-  let ignoreScroll = false;
 
-
-  // --- Show topbar after 3s on load ---
-  setTimeout(() => {
-    showTopbar();
-  }, 3000);
-
-  // --- Idle timer logic ---
-  function resetIdleTimer() {
-    clearTimeout(idleTimeout);
-    idleTimeout = setTimeout(() => {
-      hideTopbar(); // hide if idle
-    }, 10000); // 3s idle before hiding
-  }
-
-  // --- Show & hide helper functions ---
-  function showTopbar() {
-    topbar.style.opacity = "1";
-    topbar.style.transform = "translate(-50%, 0)";
-  }
-
-  function hideTopbar() {
-    topbar.style.opacity = "0";
-    topbar.style.transform = "translate(-50%, -100%)";
-  }
-
-  // --- Scroll show/hide ---
-  window.addEventListener("scroll", () => {
-    if (ignoreScroll) return;
-    if (window.scrollY > lastScrollY) {
-      // scrolling down → hide immediately
-      hideTopbar();
-    } else {
-      // scrolling up → show immediately
-      showTopbar();
-    }
-    lastScrollY = window.scrollY;
-
-    // reset idle timer after every scroll
-    resetIdleTimer();
-  });
-
-  // start idle timer when page loads
-  resetIdleTimer();
-
-    const navButtons = document.querySelectorAll(".topbar button");
-    navButtons.forEach(btn => {
-    btn.addEventListener("click", () => {
-        ignoreScroll = true;   // temporarily disable scroll hiding
-        showTopbar();          // force it to stay visible
-        resetIdleTimer();      // <-- NEW: prevent idle hiding
-
-        setTimeout(() => {
-        ignoreScroll = false; // re-enable after scroll settles
-        resetIdleTimer();
-        }, 5000); // adjust if your smooth scroll lasts longer
-    });
-    });  
 
 
   // Filter buttons
@@ -81,6 +19,24 @@ window.addEventListener("load", () => {
     });
   });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const menuBtn = document.getElementById('menu-btn');
+  const topbar = document.getElementById('topbar');
 
+  // Toggle topbar when clicking the button
+  menuBtn.addEventListener('click', (e) => {
+    topbar.classList.toggle('active');
+    menuBtn.classList.toggle('active');
+    e.stopPropagation(); // Prevent the click from bubbling to document
+  });
 
+  // Close topbar when clicking outside
+  document.addEventListener('click', (e) => {
+    // If topbar is open and click is NOT on topbar or button
+    if (topbar.classList.contains('active') && 
+        !topbar.contains(e.target) &&
+        e.target !== menuBtn) {
+      topbar.classList.remove('active');
+    }
+  });
 });
