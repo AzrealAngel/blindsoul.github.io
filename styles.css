@@ -517,3 +517,18 @@
       z-index: 10;
 
     }
+
+    #exit-btn {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 100;
+      font-size: 2rem;
+      padding: 0.5rem 1rem;
+      background-color: rgba(0, 0, 0, 0); /* black with 70% opacity */
+      color: var(--color-primary);
+      border: none;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: color 1s ease;
+    }
