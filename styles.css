@@ -128,6 +128,7 @@
       align-items: center;      /* vertical alignment */
 
     }
+  
 
     .topbar.active {
       transform: translate(-50%, 0);
@@ -285,6 +286,33 @@
         font-size: 1.5rem;
         width: 95vw;
       }
+
+      .topbar {
+      max-width: 40vw;                       
+      height: 100vh;                        
+      left: 0;
+      flex-direction: column;
+      transform: translate(-200%, 0);
+      justify-content: flex-start;
+
+    }
+    .topbar.active {
+      transform: translate(0%, 0);
+      
+    }
+    .topbar-btn {
+      height: 5%;
+      width: 80%;
+      max-width: 400px; /* optional cap */
+      min-width: 40px;  /* optional minimum */
+      margin: 0 3vh;            /* space between buttons */
+      margin-top: 3vh;
+
+    }
+    .topbar-btn:first-child {
+      margin-top: 10vh;
+
+    }
     }
 
 
