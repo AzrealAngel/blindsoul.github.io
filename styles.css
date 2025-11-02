@@ -19,11 +19,11 @@
     @media (prefers-color-scheme: dark) {
       :root {
       /* Dark color palette */
-      --color-primary: #09090a;
-      --color-secondary: #ffffff;
+      --color-primary: #ffffff;
+      --color-secondary: #000000;
       --color-accent: #ab0022;
       --color-background: #1a1a1a;
-      --color-text: #ffffff;
+      --color-text: #000000;
       --color-white: #ffffff;
       --color-black: #000000;
 
@@ -49,7 +49,7 @@
     body {
       font-family: var(--main-font); /* Use the font for the whole page */
       margin: 0px;
-      background-color: var(--color-primary);
+      background-color: var(--color-accent);
       color: var(--color-text);
       
     }
@@ -60,10 +60,10 @@
     .banner {
       position: relative;
       top: 0;
-      background-color: var(--color-primary); /* Banner color */
-      color: var(--color-text);               /* Text color */
+      background-color: var(--color-accent); /* Banner color */
+      color: var(--color-primary);               /* Text color */
       height: 100vh;                          /* Full height of the viewport */
-      width: 100vw;                            /* Full width of the viewport */
+      width: 100%;                            /* Full width of the viewport */
       display: flex;                          /* Use flexbox to center text */
       align-items: center;                    /* Vertically center text */
       justify-content: center;                /* Horizontally center text */
@@ -82,79 +82,6 @@
       display: flex;                         
       align-items: center;                    
       justify-content: center;                
-    }
-    
-    #menu-btn {
-      position: fixed;
-      top: 10px;
-      left: 10px;
-      z-index: 100;
-      font-size: 2rem;
-      padding: 0.5rem 1rem;
-      background-color: rgba(0, 0, 0, 0); /* black with 70% opacity */
-      color: var(--color-secondary);
-      border: none;
-      cursor: pointer;
-      border-radius: 8px;
-      transition: color 1s ease;
-    }
-
-    #menu-btn.active {
-      color: var(--color-primary);
-    }
-
-    .topbar {
-      position: fixed;
-      top: 0;
-      transform: translate(-250%, 0);
-      width: 100vw;                       /* keep full width or your original width */
-      height: clamp(40px, 5vh, 80px);                        /* original height */
-      padding: 1vh 1vh;                 /* original padding */
-      text-align: center;
-      font-weight: bold;
-      color: var(--color-white);
-      background: var(--color-secondary);
-      opacity: 0;
-      transition: transform 1s ease, opacity 1s ease;
-      z-index: 1;                          /* keep on top */
-      font-family: var(--main-font);       /* keep your font */
-      font-size: clamp(6px, 20px, 20px);   /* or your preferred size */
-      left: 50%;            /* middle of viewport */
-      
-      margin: 0 auto 0;
-
-      display: flex;
-      justify-content: space-around;  /* buttons centered */
-      align-items: center;      /* vertical alignment */
-
-    }
-  
-
-    .topbar.active {
-      transform: translate(-50%, 0);
-      opacity: 1;
-    }
-
-    .topbar-btn {
-      background-color: var(--color-primary);
-      color: var(--color-text);
-      border: none;
-      border-radius: 1vh;
-      height: 80%;
-      width: 20%;
-      max-width: 400px; /* optional cap */
-      min-width: 40px;  /* optional minimum */
-      margin: 0 8px;            /* space between buttons */
-      font-family: var(--main-font);
-      font-size: clamp(14px, 2vw, 24px);
-      cursor: pointer;
-      transition: background 0.2s ease, transform 0.2s ease;
-    }
-
-    .topbar-btn:hover {
-      background-color: var(--color-accent);
-      color: var(--color-primary);
-      transform: scale(1.1);
     }
 
 
@@ -345,6 +272,38 @@
       }
 
     }
+
+
+
+
+
+
+
+
+img {
+      max-width: 400px;
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+      /* Apply the SVG filter */
+      filter: url(#redGradient);
+      
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     .scroll-wrapper {
